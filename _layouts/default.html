@@ -15,5 +15,17 @@
       {{ content }}
     </main>
   </div>
+  <script src="https://unpkg.com/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: '{{ "/search.json" | relative_url }}',
+      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+      noResultsText: '<li class="no-results">見つかりませんでした</li>',
+      limit: 8,
+      fuzzy: false
+    });
+  </script>
 </body>
 </html>
