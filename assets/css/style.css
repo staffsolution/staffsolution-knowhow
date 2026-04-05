@@ -1,0 +1,252 @@
+/* =============================================
+   JLC 運営ナレッジ — カスタムスタイル
+   ============================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 15px;
+  color: #111;
+  background: #fff;
+  line-height: 1.9;
+}
+
+/* ---- 2カラムレイアウト ---- */
+.layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---- サイドバー ---- */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: #f3f4f5;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-nav {
+  padding: 0 16px;
+}
+
+/* サイトタイトルリンク */
+.nav-site-title {
+  margin-bottom: 24px;
+}
+.nav-site-title a {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+}
+.nav-site-title a:hover {
+  color: #2a6099;
+}
+
+/* セクション */
+.nav-section {
+  margin-bottom: 20px;
+}
+.nav-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-nav li {
+  margin: 0;
+}
+.sidebar-nav li a {
+  display: block;
+  padding: 4px 6px;
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 1.5;
+}
+.sidebar-nav li a:hover {
+  background: #e2e5e8;
+  color: #111;
+}
+
+/* 年ラベル */
+.nav-year {
+  font-size: 11px;
+  color: #888;
+  padding: 8px 6px 2px;
+  font-weight: 700;
+}
+
+/* ---- メインコンテンツ ---- */
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 40px 48px 80px;
+  max-width: 860px;
+}
+
+/* ---- 見出し ---- */
+.main-content h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid #ddd;
+  line-height: 1.4;
+}
+.main-content h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #111;
+  margin-top: 2.4em;
+  margin-bottom: 0.7em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #e0e0e0;
+}
+.main-content h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #111;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.main-content h4 {
+  font-size: 1.0em;
+  font-weight: 700;
+  color: #111;
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+
+/* ---- 本文 ---- */
+.main-content p {
+  margin-bottom: 1.5em;
+  color: #111;
+}
+
+/* ---- リスト ---- */
+.main-content ul,
+.main-content ol {
+  padding-left: 1.6em;
+  margin-bottom: 1.4em;
+}
+.main-content li {
+  margin-bottom: 0.4em;
+  color: #111;
+}
+
+/* ---- テーブル ---- */
+.main-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.6em;
+  font-size: 14px;
+}
+.main-content th {
+  background: #f0f1f2;
+  border: 1px solid #ccc;
+  padding: 7px 10px;
+  text-align: left;
+  font-weight: 700;
+  color: #111;
+}
+.main-content td {
+  border: 1px solid #ddd;
+  padding: 7px 10px;
+  color: #111;
+  vertical-align: top;
+}
+.main-content tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* ---- コードブロック ---- */
+.main-content code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.88em;
+  background: #f3f4f5;
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: #c7254e;
+}
+.main-content pre {
+  background: #f6f8fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin-bottom: 1.6em;
+}
+.main-content pre code {
+  background: none;
+  padding: 0;
+  color: #111;
+  font-size: 12px;
+}
+
+/* ---- 水平線 ---- */
+.main-content hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2em 0;
+}
+
+/* ---- リンク ---- */
+.main-content a {
+  color: #2a6099;
+  text-decoration: none;
+}
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+/* ---- blockquote ---- */
+.main-content blockquote {
+  border-left: 3px solid #ccc;
+  margin: 0 0 1.4em;
+  padding: 6px 16px;
+  color: #555;
+  font-style: italic;
+}
+
+/* ---- レスポンシブ（スマホ対応） ---- */
+@media (max-width: 768px) {
+  .layout-wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .main-content {
+    padding: 24px 20px 60px;
+  }
+}
