@@ -3,8 +3,6 @@ layout: default
 ---
 # Step2 競合リサーチ
 
-[← 目次に戻る](./index.md)
-
 ---
 
 ## 目的
@@ -143,3 +141,7 @@ PDF保存URL（任意）：
 - Mac：Command + K
 - Windows：Ctrl + K
 - または「挿入」→「リンク」から挿入
+
+---
+
+[← ステップ一覧に戻る](./index.md)
